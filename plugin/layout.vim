@@ -33,11 +33,11 @@ fun ToggleLayout()
         let extraSize = 0
     endif
     if g:layout == 0
-        :exec "winsize " 161 + extraSize " 45"
+        :exec "winsize " 165 + extraSize " 45"
         :vs
         let g:layout = 1
     else
-        :exec "winsize " 80 + extraSize " 45"
+        :exec "winsize " 82 + extraSize " 45"
         if winnr('$') > 1
             :q
         endif
